@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Midterm Project Repository – SE/COM S 3190
 
 Welcome to the **Midterm Project Repository** for **SE/COM S 3190 - Construction of User Interfaces (Spring 2025)**. This repository contains all the necessary files and resources for completing the **Midterm Project**.
@@ -130,3 +131,7 @@ Your team’s TA will send a **Calendly link** for demo scheduling.
 ---
 
 # 🎉  Happy Coding! 
+=======
+# CalcMate
+Creating an advanced calculator application online in HTML, CSS, JS for a user interfaces class!
+>>>>>>> bdbce036d444e37d9b618c2456307c2b26d9187c
