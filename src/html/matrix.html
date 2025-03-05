@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .matrix {
+      width: 100%;
+      margin-bottom: 20px;
+      border-collapse: collapse;
+    }
+
+    .matrix, .matrix th, .matrix td {
+      border: 1px solid #ddd;
+    }
+
+    .matrix th, .matrix td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    input {
+      width: 50px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .result {
+      margin-top: 20px;
+    }
+
+    .result table {
+      border: 2px solid #4CAF50;
+    }
+
+    .inputs {
+      margin: 10px 0;
+    }
+
+    .inputs input {
+      width: 50px;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
-    <p> fart </p>
+
+  <div class="container">
+    <h1>Matrix Calculator</h1>
+
+    <!-- Matrix Size Input -->
+    <div class="inputs">
+      <label for="rowsA">Rows for Matrix A:</label>
+      <input type="number" id="rowsA" value="3" min="1" step="1">
+      <label for="colsA">Columns for Matrix A:</label>
+      <input type="number" id="colsA" value="3" min="1" step="1">
+      <button onclick="">Create Matrix A</button>
+    </div>
+
+    <div class="inputs">
+      <label for="rowsB">Rows for Matrix B:</label>
+      <input type="number" id="rowsB" value="3" min="1" step="1">
+      <label for="colsB">Columns for Matrix B:</label>
+      <input type="number" id="colsB" value="3" min="1" step="1">
+      <button onclick="">Create Matrix B</button>
+    </div>
+
+    <div id="matrixA"></div>
+    <div id="matrixB"></div>
+
+    <!-- Operations -->
+    <div>
+      <button onclick="">Add Matrices</button>
+      <button onclick="">Subtract Matrices</button>
+      <button onclick="">Multiply Matrices</button>
+      <button onclick="">Transpose Matrix A</button>
+      <button onclick="">Transpose Matrix B</button>
+      <button onclick="">Determinant</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result" id="result">
+      <h3>Result:</h3>
+      <table id="resultMatrix"></table>
+    </div>
+  </div>
+
+
 </body>
 </html>
